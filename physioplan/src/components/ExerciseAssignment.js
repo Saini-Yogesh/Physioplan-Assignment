@@ -237,30 +237,36 @@ const Dropdown = () => {
         {/* list of exercises */}
         <h3 className="exercises-programme-heading">Exercises Programme</h3>
         <div className="exercises-container">
-          {dayExercises.map((item, index) => (
-            <div className="exercise-item" key={index}>
-              <div className="item-exercise-name-and-button">
-                <p>{item.exercise}</p>
-                <div>
-                  <button
-                    className="duplicate"
-                    onClick={() => handleDuplicateExercise(index)}
-                  >
-                    <i className="fa-regular fa-clone"></i> Duplicate
-                  </button>
-                  <i
-                    className="fa-solid fa-trash-can delete"
-                    onClick={() => handleDeleteExercise(index)}
-                  ></i>
+          {dayExercises.length === 0 ? (
+            <p className="no-exercises">No exercises...</p>
+          ) : (
+            dayExercises.map((item, index) => (
+              <div className="exercise-item" key={index}>
+                <div className="item-exercise-name-and-button">
+                  <p>{item.exercise}</p>
+                  <div>
+                    <button
+                      className="duplicate"
+                      onClick={() => handleDuplicateExercise(index)}
+                    >
+                      <i className="fa-regular fa-clone"></i> Duplicate
+                    </button>
+                    <i
+                      className="fa-solid fa-trash-can delete"
+                      onClick={() => handleDeleteExercise(index)}
+                    ></i>
+                  </div>
+                </div>
+                <div className="exercise-details">
+                  <p className="sets">Sets: {item.sets}</p>
+                  <p className="reps">Reps: {item.reps}</p>
+                  <p className="hold-time">
+                    Hold Time: {item.holdTime} seconds
+                  </p>
                 </div>
               </div>
-              <div className="exercise-details">
-                <p className="sets">Sets: {item.sets}</p>
-                <p className="reps">Reps: {item.reps}</p>
-                <p className="hold-time">Hold Time: {item.holdTime} seconds</p>
-              </div>
-            </div>
-          ))}
+            ))
+          )}
         </div>
 
         {/* Therapist Notes  */}

@@ -132,6 +132,16 @@
   background-color: red;
 }
 
+/* no-exercises */
+.no-exercises {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+  font-weight: 600;
+}
+
 /* Selected exercises styling */
 .selected-exercises {
   text-align: left;

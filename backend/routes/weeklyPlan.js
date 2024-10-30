@@ -12,6 +12,7 @@ const initialWeek = [
   { day: "Saturday", exercises: [], frequencyInDay: 1, notes: "" },
 ];
 
+// Add a previous collection of WeeklyPlan
 router.get("/plans", async (req, res) => {
   try {
     // Check if any documents exist in the WeeklyPlan collection
