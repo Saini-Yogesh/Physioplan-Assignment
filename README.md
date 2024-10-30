@@ -35,5 +35,5 @@ Typically, the backend server runs on http://localhost:5000.
 #### Project Structure
 The project includes the following main folders:
 
-backend: Contains server code, database models, and API routes.
-frontend: Includes all the React components and UI elements.
+#### `backend`: Contains server code, database models, and API routes.
+#### `frontend`: Includes all the React components and UI elements.
