@@ -1,0 +1,224 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.heading {
+  padding: 3vmin;
+  margin: 1vmin;
+  font-size: 6vmin;
+  background-color: blueviolet;
+}
+
+.navbar-container {
+  text-align: center;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 1vmin;
+}
+
+.navbar-item {
+  position: relative;
+  padding: 1vmin 3vmin;
+  width: 20vmin;
+  font-size: 2.5vmin;
+  background-color: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar-item:hover {
+  background-color: #ddd;
+}
+
+/* Submenu styling */
+.submenu {
+  position: absolute;
+  top: 101%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  background: #f1f1f1;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.submenu-item {
+  padding: 1vmin;
+  cursor: pointer;
+}
+
+.submenu-item:hover {
+  background-color: #ddd;
+}
+
+/* Days */
+.days {
+  display: flex;
+  justify-content: center;
+  padding: 2vmin;
+  gap: 2vmin;
+}
+.days button {
+  border-radius: 50%;
+  height: 6vmin;
+  width: 6vmin;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.current-day {
+  background-color: rgb(75, 161, 237);
+}
+
+.frequency-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* frequency */
+.frequency {
+  display: flex;
+  flex-direction: column;
+  padding: 2vmin;
+}
+.frequency p {
+  font-size: 3vmin;
+  margin-bottom: 2vmin;
+}
+.frequency button {
+  border-radius: 5px;
+  height: 5vmin;
+  width: 5vmin;
+  border: none;
+  font-weight: 600;
+  background-color: blanchedalmond;
+  font-size: 3vmin;
+  cursor: pointer;
+}
+.frequency span {
+  font-size: 3vmin;
+}
+
+/* save and clear buttons */
+.bottom-buttons {
+  margin: 3vmin 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3vmin;
+}
+.save,
+.clear-all {
+  padding: 1vmin;
+  border-radius: 1vmin;
+  font-size: 3vmin;
+  width: 20vmin;
+  border: none;
+  cursor: pointer;
+}
+
+.save {
+  background-color: rgb(168, 227, 168);
+}
+.clear-all {
+  background-color: red;
+}
+
+/* Selected exercises styling */
+.selected-exercises {
+  text-align: left;
+  margin: 0px 20vmin;
+  width: auto;
+}
+.exercises-container {
+  border: solid rgb(171, 165, 165) 0.2vmin;
+  min-height: 200px;
+  border-radius: 5px;
+}
+
+.exercises-programme-heading {
+  font-size: 3.5vmin;
+  margin-bottom: 1vmin;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.exercise-item {
+  padding: 1vmin;
+  background-color: #f9f9f9;
+  border-radius: 1vmin;
+  align-items: left;
+  margin: 2vmin 5vmin;
+}
+.item-exercise-name-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmin 2vmin;
+  font-size: 2.8vmin;
+  font-weight: 500;
+}
+.duplicate {
+  margin: 1vmin 2vmin;
+  border-radius: 5vmin;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2.5vmin;
+}
+.delete {
+  font-size: 3vmin;
+  margin: 1vmin;
+  cursor: pointer;
+  color: red;
+}
+.exercise-details {
+  display: flex;
+  flex-direction: row;
+  gap: 3vmin;
+}
+.exercise-details p {
+  background-color: white;
+  padding: 2vmin 4vmin;
+  border-radius: 1vmin;
+}
+
+/* therapist notes */
+.userNote {
+  box-sizing: border-box;
+  margin-top: 1vmin;
+  padding: 1vmin;
+  font-size: 2.5vmin;
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+  margin-bottom: 5vmin;
+}
+
+@media screen and (max-width: 1150px) {
+  .selected-exercises {
+    margin: 0px 10vmin;
+  }
+  .exercise-details p {
+    padding: 1.5vmin 2.5vmin;
+    border-radius: 1vmin;
+  }
+}
+@media screen and (max-width: 950px) {
+  .selected-exercises {
+    margin: 2vmin;
+  }
+  .exercise-details p {
+    padding: 1vmin 2vmin;
+    border-radius: 1vmin;
+    font-size: 2.5vmin;
+  }
+}

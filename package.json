@@ -1,0 +1,17 @@
+{
+  "name": "physioplan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "cd backend && npm start",
+    "frontend": "cd physioplan && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "author": "Yogesh Saini",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
